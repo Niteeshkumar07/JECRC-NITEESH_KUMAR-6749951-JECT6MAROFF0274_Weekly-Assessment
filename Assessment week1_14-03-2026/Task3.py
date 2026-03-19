@@ -1,7 +1,6 @@
 from selenium import webdriver
 import time
 
-# List of websites
 websites = [
     "https://www.thesouledstore.com",
     "https://www.nike.com",
@@ -16,7 +15,4 @@ for site in websites:
     time.sleep(3)
     print("Website:", site)
     print("Title:", driver.title)
-    print("----------------------")
-
-# Close browser
 driver.quit()
